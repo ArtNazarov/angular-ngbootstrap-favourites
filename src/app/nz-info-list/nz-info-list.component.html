@@ -1,4 +1,21 @@
-<app-nz-info-item  *ngFor="let item of items; index as i" 
+<!-- nz-info-list.component.html -->
+<app-nz-info-item *ngFor="let item of paginatedItems; index as i" 
                  [caption]="item.caption" 
                  [content]="item.content" 
                  [link]="item.link"></app-nz-info-item>
+
+<div class="pagination-controls" *ngIf="totalPages > 1" style="display: flex; width: 100%; flex-direction: column;">
+ <div style="display: flex; flex-direction: row; justify-content: space-around; width: 100%;" >
+   <button (click)="prevPage()" [disabled]="currentPage === 1">Пред.</button>
+  
+  <span *ngFor="let page of [].constructor(totalPages); let i = index">
+    <button (click)="goToPage(i + 1)" 
+            [class.active]="currentPage === i + 1">
+      {{ i + 1 }}
+    </button>
+  </span>
+  
+  <button (click)="nextPage()" [disabled]="currentPage === totalPages">След</button>
+</div>
+  <div class="page-info" style="flex-basis: content;">Стр. {{ currentPage }} из {{ totalPages }}</div>
+</div>

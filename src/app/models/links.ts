@@ -39,7 +39,22 @@ public static getPinnedToStartPage(){
         content: 'Новости Linux',
         link: 'https://linux.org.ru'
     };
-    return [LOR];
+    const Pikabu: Link = {
+        caption: 'Pikabu',
+        content: 'Юмор',
+        link: 'https://pikabu.ru'
+    };
+    const Lenta: Link = {
+        caption: 'Lenta',
+        content: 'Новости',
+        link: 'https://lenta.ru'
+    };
+    const Pristavka: Link = {
+        caption: 'Приставки',
+        content: 'Старые игры',
+        link: 'https://pristavka.kulichki.net'
+    };
+    return [LOR, Pikabu, Lenta, Pristavka];
 }
 }
 

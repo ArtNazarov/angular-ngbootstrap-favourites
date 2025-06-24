@@ -1,0 +1,37 @@
+/* nz-info-list.component.css */
+.pagination-controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.pagination-controls button {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination-controls button:hover:not([disabled]) {
+  background-color: #e8e8e8;
+}
+
+.pagination-controls button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-controls button.active {
+  background-color: rgb(50, 135, 221);
+  color: white;
+  border-color: rgb(50, 135, 221);
+}
+
+.page-info {
+  margin-left: 15px;
+  font-size: 0.9em;
+  color: #fdf5f5;
+}
