@@ -1,0 +1,12 @@
+<nav class="navbar navbar-expand navbar-light bg-light">
+  <div class="container-fluid">
+    <div class="navbar-nav">
+      <app-nz-menu-item 
+        *ngFor="let item of menuItems"
+        [title]="item.title"
+        [path]="item.path"
+     >
+      </app-nz-menu-item>
+    </div>
+  </div>
+</nav>

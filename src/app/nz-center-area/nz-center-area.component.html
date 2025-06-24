@@ -1,0 +1,8 @@
+<div class="center-area rounded-4 p-4" style="background-color: #38598b; color: #e7eaf6;">
+    <div *ngIf="items.length > 0; else noItems">
+        <app-nz-info-list [items]="items"></app-nz-info-list>
+    </div>
+    <ng-template #noItems>
+        <div class="text-center">No items found for this category</div>
+    </ng-template>
+</div>

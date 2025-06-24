@@ -1,0 +1,12 @@
+/* Ensure proper height propagation */
+html, body {
+  height: 100%;
+}
+
+/* Component wrapper styles */
+app-nz-left-area,
+app-nz-center-area,
+app-nz-right-area {
+  display: block;
+  height: 100%;
+}
