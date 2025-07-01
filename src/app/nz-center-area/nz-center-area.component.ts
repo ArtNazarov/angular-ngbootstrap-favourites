@@ -33,6 +33,9 @@ export class NzCenterAreaComponent {
       case 'ai':
         this.items = LinksModel.getAI();
         break;
+      case 'freelance':
+        this.items = LinksModel.getFreelance();
+        break;
       default:
         this.items = LinksModel.getPinnedToStartPage();
     }

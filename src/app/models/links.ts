@@ -33,6 +33,44 @@ public static getAI(): Link[]  {
     }
     return [DeepSeek, Perplexity];
 }
+
+public static getFreelance(){
+    const links: Link[] = [
+        {   
+            caption: 'Freelance.Ru',
+            content: 'Фриланс.Ру',
+            link:'https://freelance.ru/artnazarov'
+        },
+        {   
+            caption: 'Kadrof.Ru',
+            content: 'Кадроф.Ру',
+            link:'https://www.kadrof.ru/userprofile/view/150985'
+        },
+        {   
+            caption: 'FreelanceSpace.Ru',
+            content: 'ФрилансСпейс.Ру',
+            link:'https://freelancespace.ru/profile/artnazarov'
+        },
+        {   
+            caption: 'Freelance.Su',
+            content: 'Фриланс.Su',
+            link:'https://freelance.su/freelancers/artnazarov'
+        },
+        {   
+            caption: 'Kwork.Ru',
+            content: 'Кворк.Ру',
+            link:'https://kwork.ru/user/artnazarov'
+        },
+        {   
+            caption: 'FreelanceJob.Ru',
+            content: 'ФрилансJob.Ру',
+            link:'https://www.freelancejob.ru/users/artnazarov/'
+        },
+        
+    ];
+    return links;
+}
+
 public static getPinnedToStartPage(){
     const LOR: Link = {
         caption: 'LOR',
@@ -68,7 +106,8 @@ class MenuModel {
         return [
             { title: 'Избранное', path: '/pinned' },
             { title: 'Поисковики', path: '/search_engines' },
-            { title: 'ИИ', path: '/ai' }
+            { title: 'ИИ', path: '/ai' },
+            { title: 'Фриланс', path: '/freelance'}
         ];
     }
 }
