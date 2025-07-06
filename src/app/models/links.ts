@@ -31,7 +31,12 @@ public static getAI(): Link[]  {
         content: 'Перплексити',
         link: 'https://perplexity.com'
     }
-    return [DeepSeek, Perplexity];
+    const Scira: Link = {
+      caption: 'Scira',
+      content: 'Скира',
+      link: 'https://scira.ai/'
+    }
+    return [DeepSeek, Perplexity, Scira];
 }
 
 public static getFreelance(){
