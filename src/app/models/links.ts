@@ -36,9 +36,18 @@ public static getAI(): Link[]  {
       content: 'Скира',
       link: 'https://scira.ai/'
     }
-    return [DeepSeek, Perplexity, Scira];
+    const zAi: Link = {
+        caption: 'Z AI',
+        content: 'Z',
+        link: 'https://chat.z.ai/'
+    }
+    const mmAi: Link = {
+        caption: 'Minimax AI',
+        content: 'minimax',
+        link: 'https://chat.minimax.io/'
+    }
+    return [DeepSeek, Perplexity, Scira, zAi, mmAi]
 }
-
 public static getFreelance(){
     const links: Link[] = [
         {   
