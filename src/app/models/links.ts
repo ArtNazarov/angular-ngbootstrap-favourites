@@ -46,7 +46,12 @@ public static getAI(): Link[]  {
         content: 'minimax',
         link: 'https://chat.minimax.io/'
     }
-    return [DeepSeek, Perplexity, Scira, zAi, mmAi]
+    const qwenAi: Link = {
+        caption: 'Qwen AI',
+        content: 'qwen',
+        link: 'https://chat.qwen.ai/'
+    }
+    return [DeepSeek, Perplexity, Scira, zAi, mmAi, qwenAi]
 }
 public static getFreelance(){
     const links: Link[] = [
