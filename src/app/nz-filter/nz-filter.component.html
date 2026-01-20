@@ -8,5 +8,8 @@
     class="filter-input"
   />
   <button (click)="onFilter()" class="filter-button">Фильтр</button>
-  <button (click)="clearFilter()" class="clear-button" *ngIf="filterText">×</button>
+  
+  @if (filterText) {
+    <button (click)="clearFilter()" class="clear-button">×</button>
+  }
 </div>

@@ -3,7 +3,7 @@ A website with a collection of useful links
 
 # Screenshots
 
-![Filter](https://dl.dropbox.com/scl/fi/2hx4hyhru3icfe0mv8d14/ng-filter.png?rlkey=qy8lt1bdbmxe1j0d1wt1rwc2s&st=fxyuziyw)
+![Filter](https://dl.dropbox.com/scl/fi/mhg8yem2ahyqh38pmzchc/ng-filterII.png?rlkey=33caz4vn6rrrf4qhaw74n4xoh&st=7xc801vb)
 
 # What's new
 
