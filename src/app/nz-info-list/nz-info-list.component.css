@@ -33,5 +33,17 @@
 .page-info {
   margin-left: 15px;
   font-size: 0.9em;
-  color: #fdf5f5;
+  color: #666;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.no-results {
+  margin-top: 20px;
+  padding: 16px;
+  text-align: center;
+  background-color: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 6px;
+  color: #856404;
 }

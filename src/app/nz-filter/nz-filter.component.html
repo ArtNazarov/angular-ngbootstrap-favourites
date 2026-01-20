@@ -1,0 +1,12 @@
+<!-- nz-filter.component.html -->
+<div class="filter-container">
+  <input 
+    type="text" 
+    [(ngModel)]="filterText" 
+    (keyup.enter)="onFilter()"
+    [placeholder]="placeholder"
+    class="filter-input"
+  />
+  <button (click)="onFilter()" class="filter-button">Фильтр</button>
+  <button (click)="clearFilter()" class="clear-button" *ngIf="filterText">×</button>
+</div>

@@ -1,21 +1,40 @@
 <!-- nz-info-list.component.html -->
+<!-- Filter component -->
+<app-nz-filter 
+  *ngIf="enableFiltering === 'yes'"
+  (filterChange)="onFilterChange($event)">
+</app-nz-filter>
+
+<!-- Items list -->
 <app-nz-info-item *ngFor="let item of paginatedItems; index as i" 
                  [caption]="item.caption" 
                  [content]="item.content" 
                  [link]="item.link"></app-nz-info-item>
 
+<!-- Pagination controls -->
 <div class="pagination-controls" *ngIf="totalPages > 1" style="display: flex; width: 100%; flex-direction: column;">
- <div style="display: flex; flex-direction: row; justify-content: space-around; width: 100%;" >
-   <button (click)="prevPage()" [disabled]="currentPage === 1">Пред.</button>
-  
-  <span *ngFor="let page of [].constructor(totalPages); let i = index">
-    <button (click)="goToPage(i + 1)" 
-            [class.active]="currentPage === i + 1">
-      {{ i + 1 }}
-    </button>
-  </span>
-  
-  <button (click)="nextPage()" [disabled]="currentPage === totalPages">След</button>
+  <div style="display: flex; flex-direction: row; justify-content: space-around; width: 100%;">
+    <button (click)="prevPage()" [disabled]="currentPage === 1">Пред.</button>
+    
+    <span *ngFor="let page of [].constructor(totalPages); let i = index">
+      <button (click)="goToPage(i + 1)" 
+              [class.active]="currentPage === i + 1">
+        {{ i + 1 }}
+      </button>
+    </span>
+    
+    <button (click)="nextPage()" [disabled]="currentPage === totalPages">След</button>
+  </div>
+  <div class="page-info" style="flex-basis: content;">
+    Стр. {{ currentPage }} из {{ totalPages }}
+    <span *ngIf="enableFiltering === 'yes' && filterString">
+      (Найдено: {{ filteredItems.length }})
+    </span>
+  </div>
 </div>
-  <div class="page-info" style="flex-basis: content;">Стр. {{ currentPage }} из {{ totalPages }}</div>
+
+<!-- No results message -->
+<div *ngIf="filteredItems.length === 0 && enableFiltering === 'yes' && filterString" 
+     class="no-results">
+  Ничего не найдено по запросу "{{ filterString }}"
 </div>
