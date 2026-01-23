@@ -1,0 +1,8 @@
+/* nz-info-item.component.css */
+:host ::ng-deep .highlight {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  padding: 2px 0;
+  border-radius: 3px;
+}

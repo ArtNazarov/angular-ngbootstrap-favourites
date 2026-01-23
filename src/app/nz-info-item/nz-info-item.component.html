@@ -1,6 +1,9 @@
 <div style="background-color: rgb(50, 135, 221); margin-top:8px; border-radius: 10px; color:rgb(255, 255, 255); padding:10px">
-    <h3>{{ caption }}</h3>
-    <p>{{ content }}</p>
+    <!-- Highlight caption if needed -->
+    <h3 [innerHTML]="needsHighlighting(caption) ? highlightText(caption) : caption"></h3>
+    
+    <!-- Highlight content if needed -->
+    <p [innerHTML]="needsHighlighting(content) ? highlightText(content) : content"></p>
 
     <a target="_blank" class="btn btn-success" href="{{ link }}">перейти</a>
 </div>
