@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Избранное",
+    "path": "/pinned"
+  },
+  {
+    "title": "Поисковики",
+    "path": "/search_engines"
+  },
+  {
+    "title": "ИИ",
+    "path": "/ai"
+  },
+  {
+    "title": "Фриланс",
+    "path": "/freelance"
+  }
+]

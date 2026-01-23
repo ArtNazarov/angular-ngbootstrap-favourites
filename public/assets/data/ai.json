@@ -1,0 +1,42 @@
+[
+  {
+    "caption": "DeepSeek",
+    "content": "Чат с DeepSeek",
+    "link": "https://chat.deepseek.com"
+  },
+  {
+    "caption": "Perplexity",
+    "content": "Перплексити",
+    "link": "https://perplexity.com"
+  },
+  {
+    "caption": "Scira",
+    "content": "Скира",
+    "link": "https://scira.ai/"
+  },
+  {
+    "caption": "Z AI",
+    "content": "Z",
+    "link": "https://chat.z.ai/"
+  },
+  {
+    "caption": "Minimax AI",
+    "content": "minimax",
+    "link": "https://chat.minimax.io/"
+  },
+  {
+    "caption": "Qwen AI",
+    "content": "qwen",
+    "link": "https://chat.qwen.ai/"
+  },
+  {
+    "caption": "Ernie AI",
+    "content": "baidu`s ernie",
+    "link": "https://ernie.baidu.com/"
+  },
+  { 
+    "caption" : "Grok",
+    "content" : "Elon`s AI",
+    "link": "https://grok.com/"
+    }
+]

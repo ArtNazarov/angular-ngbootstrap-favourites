@@ -1,0 +1,27 @@
+[
+  {
+    "caption": "LOR",
+    "content": "Новости Linux",
+    "link": "https://linux.org.ru"
+  },
+  {
+    "caption": "Pikabu",
+    "content": "Юмор",
+    "link": "https://pikabu.ru"
+  },
+  {
+    "caption": "Lenta",
+    "content": "Новости",
+    "link": "https://lenta.ru"
+  },
+  {
+    "caption": "Приставки",
+    "content": "Старые игры",
+    "link": "https://pristavka.kulichki.net"
+  },
+  {
+    "caption": "Авиация",
+    "content": "Сайт о летательных аппаратах",
+    "link": "https://avia.pro"
+  }
+]

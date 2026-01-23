@@ -1,0 +1,17 @@
+[
+  {
+    "caption": "Google",
+    "content": "Гугл",
+    "link": "https://google.com"
+  },
+  {
+    "caption": "Yandex",
+    "content": "Яндекс",
+    "link": "https://ya.ru"
+  },
+  {
+    "caption": "DDG",
+    "content": "DuckDuckGo",
+    "link": "https://duckduckgo.com"
+  }
+]
