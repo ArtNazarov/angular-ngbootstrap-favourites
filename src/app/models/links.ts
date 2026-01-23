@@ -51,7 +51,12 @@ public static getAI(): Link[]  {
         content: 'qwen',
         link: 'https://chat.qwen.ai/'
     }
-    return [DeepSeek, Perplexity, Scira, zAi, mmAi, qwenAi]
+    const ernieAi: Link = {
+        caption: 'Ernie AI',
+        content: 'baidu`s ernie',
+        link: 'https://ernie.baidu.com/'
+    };
+    return [DeepSeek, Perplexity, Scira, zAi, mmAi, qwenAi, ernieAi]
 }
 public static getFreelance(){
     const links: Link[] = [
