@@ -3,6 +3,7 @@
   <input 
     type="text" 
     [(ngModel)]="filterText" 
+    (ngModelChange)="onInputChange()"
     (keyup.enter)="onFilter()"
     [placeholder]="placeholder"
     class="filter-input"
